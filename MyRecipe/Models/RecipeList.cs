@@ -15,12 +15,19 @@ namespace MyRecipe.Models
     {
         private static List<Recipe> recipes = new List<Recipe>();
 
+        // This returns the current list of recipes 
         public static IEnumerable<Recipe> Recipes
         {
             get
             {
                 return Recipes;
             }
+        }
+
+        // This method adds a new recipe to the list of recipes
+        public static void AddRecipe(Recipe recipe)
+        {
+            recipes.Add(recipe);
         }
     }
 }
