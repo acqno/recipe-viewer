@@ -12,7 +12,10 @@ namespace MyRecipe.Controllers
         // Action method that calls the index (homepage) view 
         public ViewResult Index()
         {
-            return View();
+            Recipe recipe = new Recipe();
+            recipe.Name = "pizza";
+
+            return View(recipe);
         }
     }
 }
