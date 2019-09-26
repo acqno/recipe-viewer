@@ -17,5 +17,10 @@ namespace MyRecipe.Controllers
 
             return View(recipe);
         }
+
+        public ViewResult AddRecipeForm()
+        {
+            return View();
+        }
     }
 }

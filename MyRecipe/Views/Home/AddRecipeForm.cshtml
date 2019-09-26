@@ -1,0 +1,30 @@
+﻿@model Recipe
+@{
+    ViewBag.Title = "Add Recipe";
+}
+
+<div class="container">
+    <h1 class="home-title">My Recipe Viewer</h1>
+    <nav class="main-nav">
+        <ul class="main-nav__items">
+            <li class="main-nav__item">
+                <a class="item-anchor" href="">Recipe List</a>
+            </li>
+            <li class="main-nav__item">
+                <a class="item-anchor" href="">Add Recipe</a>
+            </li>
+            <li class="main-nav__item">
+                <a class="item-anchor" href="">View Recipe</a>
+            </li>
+            <li class="main-nav__item">
+                <a class="item-anchor" href="">Reviews</a>
+            </li>
+        </ul>
+    </nav>
+    <p class="home-paragraph">Welcome to the recipe viewer - Create, Save, and View all your favourite recipes!</p>
+
+    <form>
+        <label>Recipe Name:</label>
+        <input class="name-input" type="text" />
+    </form>
+</div>
