@@ -1,6 +1,11 @@
 ﻿.form-container {
     margin: 1rem;
-    padding: 0.5rem;
+    padding: 1.5rem;
     width: 70vw;
-    border: solid 1px black;
+    background-color: #E6E5E8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.submit-button__container {
+    text-align: center;
 }
