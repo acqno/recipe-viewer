@@ -5,6 +5,10 @@ using System.Threading.Tasks;
 
 namespace MyRecipe.Models
 {
+    /// <summary>
+    /// This is the Recipe Model 
+    /// This will be used to create Recipes that can be added to the RecipeList Model
+    /// </summary>
     public class Recipe
     {
         public string Name { get; set; }
