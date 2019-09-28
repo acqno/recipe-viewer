@@ -3,6 +3,15 @@
     ViewBag.Title = "Recipe List";
 }
 
+<link rel="stylesheet" href="~/css/bootstrap.css" />
+<link rel="stylesheet" href="~/css/Form.css" />
+
+<style>
+    .form-container {
+        margin: 3rem auto;
+    }
+</style>
+
 <div class="container">
     <h1 class="home-title">My Recipe Viewer</h1>
     <nav class="main-nav">
@@ -23,3 +32,34 @@
     </nav>
     <p class="home-paragraph">Welcome to the recipe viewer - Create, Save, and View all your favourite recipes!</p>
 </div>
+
+<div class="form-container">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Ingredients</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
