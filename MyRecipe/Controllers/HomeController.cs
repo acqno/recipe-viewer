@@ -37,7 +37,7 @@ namespace MyRecipe.Controllers
 
     public ViewResult RecipesList()
     {
-      return View();
+      return View(RecipeList.Recipes);
     }
   }
 }

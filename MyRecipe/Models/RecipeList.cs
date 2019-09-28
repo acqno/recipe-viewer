@@ -20,7 +20,7 @@ namespace MyRecipe.Models
         {
             get
             {
-                return Recipes;
+                return recipes;
             }
         }
 

@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<Recipe>
 @{
     ViewBag.Title = "Recipe List";
 }
@@ -23,9 +23,6 @@
                 <a asp-action="AddRecipeForm" class="item-anchor">Add Recipe</a>
             </li>
             <li class="main-nav__item">
-                <a class="item-anchor" href="">View Recipe</a>
-            </li>
-            <li class="main-nav__item">
                 <a class="item-anchor" href="">Reviews</a>
             </li>
         </ul>
@@ -37,13 +34,20 @@
     <table class="table table-hover">
         <thead>
             <tr>
-                <th scope="col">#</th>
+                @*<th scope="col">#</th>*@
                 <th scope="col">Name</th>
                 <th scope="col">Ingredients</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
+            @foreach (Recipe r in Model)
+            {
+                <tr>
+                    <td>@r.Name</td>
+                    <td>@r.Ingredients</td>
+                </tr>
+            }
+            @*<tr>
                 <th scope="row">1</th>
                 <td></td>
                 <td></td>
@@ -58,7 +62,7 @@
                 <th scope="row">3</th>
                 <td colspan="2"></td>
                 <td></td>
-            </tr>
+            </tr>*@
         </tbody>
     </table>
 </div>
