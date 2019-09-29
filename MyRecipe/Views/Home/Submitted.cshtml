@@ -3,6 +3,8 @@
     ViewBag.Title = "My Recipe Home";
 }
 
+<link rel="stylesheet" href="~/css/Common.css" />
+
 <style>
     .submit-container {
     margin: 1rem;
@@ -21,7 +23,10 @@
     <nav class="main-nav">
         <ul class="main-nav__items">
             <li class="main-nav__item">
-                <a asp-action="RecipesList" class="item-anchor" >Recipe List</a>
+                <a asp-action="Index" class="item-anchor">Home</a>
+            </li>
+            <li class="main-nav__item">
+                <a asp-action="RecipesList" class="item-anchor">Recipe List</a>
             </li>
             <li class="main-nav__item">
                 <a asp-action="AddRecipeForm" class="item-anchor">Add Recipe</a>
@@ -40,3 +45,11 @@
     Click <a asp-action="RecipesList">Here</a> to view your list of recipes.
   </p>
 </div>
+
+<footer>
+    <div class="footer-container">
+        <h6 class="footer-tag">
+            &copy; My Recipe Viewer 2019 - Made by Alvin Quijano
+        </h6>
+    </div>
+</footer>

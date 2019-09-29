@@ -1,15 +1,10 @@
-﻿
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    <link href="@Url.Content("~/css/Common.css")" rel="stylesheet" type="text/css" />
 </head>
 <body>
     @RenderBody()

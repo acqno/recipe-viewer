@@ -4,11 +4,15 @@
 }
 <link rel="stylesheet" href="~/css/Form.css" />
 <link rel="stylesheet" href="~/css/bootstrap.css" />
+<link rel="stylesheet" href="~/css/Common.css" />
 
 <div class="container">
     <h1 class="home-title">My Recipe Viewer</h1>
     <nav class="main-nav">
         <ul class="main-nav__items">
+            <li class="main-nav__item">
+                <a asp-action="Index" class="item-anchor">Home</a>
+            </li>
             <li class="main-nav__item">
                 <a asp-action="RecipesList" class="item-anchor">Recipe List</a>
             </li>
@@ -40,3 +44,11 @@
         </div>   
     </form>
 </div>
+
+<footer>
+    <div class="footer-container">
+        <h6 class="footer-tag">
+            &copy; My Recipe Viewer 2019 - Made by Alvin Quijano
+        </h6>
+    </div>
+</footer>
