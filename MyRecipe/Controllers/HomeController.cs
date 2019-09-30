@@ -47,5 +47,10 @@ namespace MyRecipe.Controllers
     {
         return View(RecipeList.Recipes);
     }
+
+    public ViewResult RecipeInfo()
+        {
+            return View();
+        }
   }
 }
