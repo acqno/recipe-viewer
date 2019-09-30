@@ -42,5 +42,10 @@ namespace MyRecipe.Controllers
     {
       return View(RecipeList.Recipes);
     }
+
+    public ViewResult Review()
+    {
+        return View(RecipeList.Recipes);
+    }
   }
 }

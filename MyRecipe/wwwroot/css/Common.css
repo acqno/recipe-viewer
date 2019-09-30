@@ -38,10 +38,14 @@ body {
     color: inherit;
 }
 
-    .item-anchor:hover {
-        padding-bottom: 10px;
-        border-bottom: solid 2px #28262C;
-    }
+.item-anchor:hover {
+    padding-bottom: 10px;
+    border-bottom: solid 2px #28262C;
+}
+
+.content {
+    text-align: center;
+}
 
 @media (min-width: 40rem) {
     .container {
