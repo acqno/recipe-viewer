@@ -5,19 +5,18 @@
     ViewBag.Title = "My Recipe Home";
 }
 <link rel="stylesheet" href="~/css/bootstrap.css" />
-<link rel="stylesheet" href="~/css/Common.css" />
+<link rel="stylesheet" href="~/css/main.css" />
+<link rel="stylesheet" href="~/css/Form.css" />
 
 <style>
-    .content {
-        text-align: center;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        width: 60vw;
-        background-color: #E6E5E8;
-        padding: 2rem;
-        margin: 2rem auto;
+    .main-content {
+        margin-bottom: 8rem;
+        width: 55vw;
+    }
+    .index-img-container {
+        width: 40rem;
     }
 </style>
-
 <div class="container">
     <h1 class="home-title">My Recipe Viewer</h1>
     <nav class="main-nav">
@@ -37,20 +36,19 @@
         </ul>
     </nav>
     <p class="home-paragraph">Welcome to the recipe viewer - Create, Save, and View all your favourite recipes!</p>
-</div>
 
-<div class="content">
-    <div classs="img-container">
-        <img src="~/img/pizza.jpg" />
-    </div>    
-</div>
-
-<footer>
-    <div class="footer-container">
-        <h6 class="footer-tag">
-            &copy; My Recipe Viewer 2019 - Made by Alvin Quijano
-        </h6>
+    <div class="form-container main-content">
+        <div classs="index-img-container">
+            <img src="~/img/pizza.jpg" />
+        </div>
     </div>
-</footer>
+    
+</div>
+        
+<div class="footer-container">
+    <h6 class="footer-tag">
+        &copy; My Recipe Viewer 2019 - Made by Alvin Quijano
+    </h6>
+</div>
 
 

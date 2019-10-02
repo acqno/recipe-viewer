@@ -5,43 +5,24 @@
 }
 
 <link rel="stylesheet" href="~/css/bootstrap.css" />
-<link rel="stylesheet" href="~/css/Common.css" />
+<link rel="stylesheet" href="~/css/main.css" />
+<link rel="stylesheet" href="~/css/Form.css" />
 
 <style>
-    body {
-        position: relative;
-        
-    }
-    .content {
-        text-align: center;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        width: 60vw;
-        background-color: #E6E5E8;
-        padding: 2rem;
-        margin: 2rem auto;
-    }
+   .recipe-card {
+       text-align: left;
+       margin-bottom: 10rem;
+   }
 
-    .img-container {
-        margin: 0 auto;
-        width: 40%;
-    }
+   .recipe-title {
+       font-weight: bold;
+       margin: 1rem 0;
+   }
 
-    img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .footer-container {
-    background-color: #73756A;
-    min-width: 100%;
-    max-width: 100%;
-    height: 5rem;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
+   .recipe-img-container {
+       width: 30rem;
+       margin: 0 auto;
+   }
 </style>
 
 <div class="container">
@@ -63,25 +44,27 @@
         </ul>
     </nav>
     <p class="home-paragraph">Welcome to the recipe viewer - Create, Save, and View all your favourite recipes!</p>
-</div>
 
-<div class="content">
-    <div class="img-container">
-        <img src="~/img/mac.jpeg" />
+    <div class="form-container recipe-card">
+        <div class="recipe-img-container">
+            <img src="~/img/mac.jpeg" />
+        </div>
+        <div class="recipe-content">
+            <h3 class="recipe-title">Macaroni and Cheese Recipe</h3>
+            <h4>Ingredients</h4>
+            <p>macaroni, butter, flour, salt, black pepper, milk, cheddar cheese</p>
+            <h4>Instructions</h4>
+            <p>Cook macaroni according to package directions.</p>
+            <p>
+                In medium saucepan, melt butter over medium heat; stir in flour, and cook for 3-5 minutes stirring constantly to form a roux; add salt and pepper; slowly add milk, stirring well after each addition.
+                Cook and stir until bubbly.
+            </p>
+            <p>Stir in cheese a small amount at a time until fully melted.</p>
+            <p>
+                Drain macaroni; add to cheese sauce; stir to coat.
+            </p>
+        </div>
     </div>
-    <h3>Macaroni and Cheese Recipe</h3>
-    <h4>Ingredients</h4>
-    <p>macaroni, butter, flour, salt, black pepper, milk, cheddar cheese</p>
-    <h4>Instructions</h4>
-    <p>Cook macaroni according to package directions.</p>
-    <p>
-        In medium saucepan, melt butter over medium heat; stir in flour, and cook for 3-5 minutes stirring constantly to form a roux; add salt and pepper; slowly add milk, stirring well after each addition.
-        Cook and stir until bubbly.
-    </p>
-    <p>Stir in cheese a small amount at a time until fully melted.</p>
-    <p>
-        Drain macaroni; add to cheese sauce; stir to coat.
-    </p>   
 </div>
 
 <footer>
