@@ -50,7 +50,7 @@ namespace MyRecipe.Controllers
 
     public ViewResult RecipeInfo()
         {
-            return View();
+            return View(RecipeList.Recipes);
         }
   }
 }
