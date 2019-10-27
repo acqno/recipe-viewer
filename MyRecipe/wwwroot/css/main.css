@@ -1,7 +1,7 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway&display=swap');
 
-body {
-    background-color: #E3E7D3;
+.main-body {
+    background-color: #E3E7D3 !important;
     position: relative;
     min-height: 100vh;
     color: #28262C;
@@ -99,27 +99,13 @@ img {
     padding-top: 2rem;
 }
 
-.form-container {
-    margin: 1rem;
-    padding: 1.5rem;
-    width: 70vw;
-    background-color: #E6E5E8;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-    .form-container.inner {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
 .submit-button__container {
     text-align: center;
 }
 
 .recipe-card {
     text-align: left;
-    margin-bottom: 10rem;
+    margin-bottom: 10rem !important;
     width: 60vw;
 }
 
@@ -133,3 +119,44 @@ img {
     margin: 0 auto;
 }
 
+.form-container {
+    margin: 1rem auto;
+    text-align: center;
+    padding: 1.5rem;
+    width: 70vw;
+    background-color: #E6E5E8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-container.inner {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-button__container {
+    text-align: center;
+}
+
+.submit-container {
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 70vw;
+    background-color: #E6E5E8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.form-control {
+    margin-bottom: 8px;
+}
+
+.main-content {
+    margin-bottom: 8rem;
+    width: 55vw;
+}
+
+.index-img-container {
+    width: 40rem;
+}
