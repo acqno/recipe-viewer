@@ -1,0 +1,19 @@
+﻿@model MyRecipe.Models.Recipe
+
+<form class="form-container" asp-action="AddRecipeForm" method="post">
+    <div class="form-group">
+        <label asp-for="Name">Recipe Name</label>
+        <input class="form-control" asp-for="Name" placeholder="Enter Recipe Name">
+    </div>
+    <div class="form-group">
+        <label asp-for="Ingredients" -for="">Ingredients</label>
+        <textarea class="form-control" asp-for="Ingredients" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label asp-for="Instructions">Instructions</label>
+        <textarea class="form-control" asp-for="Instructions" rows="3"></textarea>
+    </div>
+    <div class="submit-button__container">
+        <button type="submit" class="btn btn-primary submit-button">Submit Recipe</button>
+    </div>
+</form>
