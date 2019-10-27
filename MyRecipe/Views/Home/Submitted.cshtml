@@ -3,40 +3,6 @@
     ViewBag.Title = "My Recipe Home";
 }
 
-@*<style>
-    .submit-container {
-    margin: 1rem;
-    padding: 1.5rem;
-    width: 70vw;
-    background-color: #E6E5E8;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    text-align: center;
-    margin: 3rem auto;
-}
-</style>*@
-
-<div class="container">
-    <h1 class="home-title">My Recipe Viewer</h1>
-    <nav class="main-nav">
-        <ul class="main-nav__items">
-            <li class="main-nav__item">
-                <a asp-action="Index" class="item-anchor">Home</a>
-            </li>
-            <li class="main-nav__item">
-                <a asp-action="RecipesList" class="item-anchor">Recipe List</a>
-            </li>
-            <li class="main-nav__item">
-                <a asp-action="AddRecipeForm" class="item-anchor">Add Recipe</a>
-            </li>
-            <li class="main-nav__item">
-                <a asp-action="Review" class="item-anchor">Reviews</a>
-            </li>
-        </ul>
-    </nav>
-    <p class="home-paragraph">Welcome to the recipe viewer - Create, Save, and View all your favourite recipes!</p>
-</div>
-
 <div class="submit-container">
   <h1>Recipe Added!</h1>
   <p>
@@ -44,10 +10,3 @@
   </p>
 </div>
 
-<footer>
-    <div class="footer-container">
-        <h6 class="footer-tag">
-            &copy; My Recipe Viewer 2019 - Made by Alvin Quijano
-        </h6>
-    </div>
-</footer>
