@@ -21,7 +21,10 @@
                     <td>@r.Name</td>
                     <td>@r.Ingredients</td>
                     <td>
-                        <a asp-action="RecipeInfo" type="button" class="btn btn-secondary btn-sm">View recipe</a>
+                        <a  type="button" class="btn btn-secondary btn-sm" 
+                           asp-action="RecipeInfo"
+                           asp-route-name="@r.Name"
+                           >View recipe</a>
                     </td>
                 </tr>
             }

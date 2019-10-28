@@ -48,9 +48,13 @@ namespace MyRecipe.Controllers
         return View(RecipeList.Recipes);
     }
 
-    public ViewResult RecipeInfo()
+    public ViewResult RecipeInfo(string name)
         {
-            return View(RecipeList.Recipes);
+            // Select the recipe from the list with the matching 'Name' 
+            Recipe recipe = RecipeList.Recipes.FirstOrDefault(r => r.Name == name);
+
+            // Return the recipe into the RecipeInfo view 
+            return View(recipe);
         }
   }
 }

@@ -7,8 +7,8 @@ namespace MyRecipe.Models
 {
     /// <summary>
     /// 
-    /// This is the RecipeList Model
-    /// It creates a list of recipes and returns it to the RecipeList View 
+    /// This is the RecipeList repository
+    /// It creates a list of recipes using the Recipe Model
     /// 
     /// </summary>
     public static class RecipeList
