@@ -1,16 +1,13 @@
-﻿@model MyRecipe.Models.Recipe
+﻿@model Recipe
 
 @{
     ViewData["Title"] = "Recipe Details";
 }
 
 <div class="form-container recipe-card">
-    @*<div class="recipe-img-container">
-        <img src="~/img/mac.jpeg" />
-    </div>*@
 
     <div class="recipe-content">
-        <h3 class="recipe-title">@Model.Name</h3>
+        <h1 class="recipe-title">@Model.Name</h1>
 
         <h4>Ingredients</h4>
         <p>@Model.Ingredients</p>
@@ -19,5 +16,7 @@
         <p>
             @Model.Instructions
         </p>
+
+        <a class="btn btn-primary review-button" asp-action="Review">Leave us a review!</a>
     </div>
 </div>

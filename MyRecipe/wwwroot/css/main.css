@@ -110,13 +110,20 @@ img {
 }
 
 .recipe-title {
+    font-family: Lobster, sans-serif;
     font-weight: bold;
-    margin: 1rem 0;
+    font-size: 3.5rem;
+    text-decoration:underline;
+    margin: 2rem 0;
 }
 
 .recipe-img-container {
     width: 30rem;
     margin: 0 auto;
+}
+
+.recipe-content {
+    border: solid 1.5px #4f4f4f;
 }
 
 .form-container {
@@ -159,4 +166,8 @@ img {
 
 .index-img-container {
     width: 40rem;
+}
+
+.review-button {
+    margin: 1rem;
 }
